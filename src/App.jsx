@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LandingPage from './LandingPage'
 import { Otp } from './components/Otp'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,11 +25,14 @@ function App() {
       Hi there from 3rd div
     </div>
     </div> */}
-
-    {/* <LandingPage/> */}
-    <div className='h-screen flex justify-center '>
+   <Routes>
+    <Route path='/' element={<LandingPage/> }/>
+    <Route path='/verify' element={  <div className='h-screen flex justify-center '>
       <Otp/>
-    </div>
+    </div>}/>
+   </Routes>
+     
+
    
     </>
   )

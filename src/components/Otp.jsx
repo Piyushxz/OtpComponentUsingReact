@@ -13,7 +13,7 @@ export const Otp = () =>{
 
         <div className="flex flex-col ">
         <div className="mt-20 flex justify-center">
-            <h1 className="font-montserrat text-text1 font-bold sm:text-5xl text-2xl">Check Yout Email For Otp</h1>
+            <h1 className="font-montserrat text-text1 font-bold sm:text-5xl text-2xl">Enter the Otp</h1>
         </div>
         <div className="mt-10 flex justify-center">
         <OtpBox reference={ref1} 
